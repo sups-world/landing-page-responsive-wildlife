@@ -10,7 +10,9 @@
 
 html,body{
     width: 100%;
-    height: 100%;
+    /* for responsive viewport height used instead of %:::when vh is used children divs cannot use % in height so replace with min-height and vh */
+    /* min-height is inherit wherever needed */
+    min-height: 100vh;
 }
 
 #main{
@@ -20,7 +22,7 @@ html,body{
 
 #top{
     width: 100%;
-    height: 60%;
+    min-height: 60vh;
     background-image: url("https://images.unsplash.com/photo-1535025075092-5a1cf795130b?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
     background-position: center;
@@ -29,7 +31,7 @@ html,body{
 #overlay{
     position: relative;
     width: 100%;
-    height: 100%;
+    min-height: inherit;
     background-color: rgba(0, 0, 0, 0.037);
 }
 
@@ -76,14 +78,15 @@ html,body{
 #bottom{
     background-color: lightblue;
     width: 100%;
-    height: 40%;
+    min-height: 40vh;
+    /* for the children of bottom, min-height becomes inherit */
 
     display: flex;
 }
 
 #b-one{
     padding: 30px;
-    height: 100%;
+    min-height:inherit;
     width: 25%;
     background-color: rgb(171, 246, 158);
     color:black;
@@ -94,7 +97,7 @@ html,body{
     margin-top: 20px;
 }
 #b-two{
-    height: 100%;
+    min-height:inherit;
     width: 25%;
     background-image: url("https://plus.unsplash.com/premium_photo-1661962819231-1aa10d44631d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8amFndWFyJTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D");
     background-size: cover;
@@ -102,7 +105,7 @@ html,body{
     
 }
 #b-three{
-    height: 100%;
+    min-height:inherit;
     width: 20%;
     background-color: rgb(15, 171, 67);
 }
@@ -126,7 +129,7 @@ html,body{
     background-position: bottom;
 }
 #b-four{
-    height: 100%;
+    min-height:inherit;
     width: 30%;
     background-color: rgb(2, 70, 2);
     color:white;
