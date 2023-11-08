@@ -4,6 +4,8 @@
     margin: 0;
     padding:0;
     font-family: 'Poppins', sans-serif;
+    /* w/o box-sizing elements will go beyond */
+    box-sizing: border-box;
 }
 
 html,body{
@@ -32,6 +34,7 @@ html,body{
 }
 
 #overlay #text{
+    align-items: center;
     position: absolute;
     bottom:20%;
     
@@ -52,13 +55,22 @@ html,body{
  #textright{
     display: flex;
     justify-content: space-between;
-    /* width: 60%; */
+    width: 60%;
+
+    align-items: center;
     
     
 }
 #text #textright p{
     font-size:12px;
     
+}
+
+#icons{
+    color:rgb(251, 250, 251);
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
 }
 
 #bottom{
