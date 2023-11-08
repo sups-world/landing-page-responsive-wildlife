@@ -89,15 +89,31 @@ html,body{
 #b-two{
     height: 100%;
     width: 25%;
-    background-color: rgb(17, 114, 198);
+    background-image: url("https://plus.unsplash.com/premium_photo-1661962819231-1aa10d44631d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8amFndWFyJTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: cover;
+    transform: scaleX(-1);
+    
 }
 #b-three{
     height: 100%;
-    width: 25%;
+    width: 20%;
     background-color: rgb(15, 171, 67);
+}
+#b-three-top{
+    height: 50%;
+    width: 100%;
+    background-color:rgb(29, 115, 29);
+}
+#b-three-bottom{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(46, 192, 99);
+    background-image: url("https://images.unsplash.com/photo-1623334999098-7333609260cd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9uZHxlbnwwfHwwfHx8MA%3D%3D");
+    background-size: cover;
+    background-position: bottom;
 }
 #b-four{
     height: 100%;
-    width: 25%;
+    width: 30%;
     background-color: rgb(187, 228, 23);
 }
