@@ -82,10 +82,16 @@ html,body{
 }
 
 #b-one{
+    padding: 30px;
     height: 100%;
     width: 25%;
     background-color: rgb(171, 246, 158);
     color:black;
+}
+
+#b-one p{
+    font-size: 14px;
+    margin-top: 20px;
 }
 #b-two{
     height: 100%;
@@ -104,6 +110,12 @@ html,body{
     height: 50%;
     width: 100%;
     background-color:rgb(29, 115, 29);
+    padding: 20px;
+    color:white
+}
+#b-three-top p{
+    font-size: 13px;
+    margin-top: 5px;
 }
 #b-three-bottom{
     height: 50%;
