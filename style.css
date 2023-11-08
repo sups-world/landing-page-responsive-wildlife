@@ -84,7 +84,8 @@ html,body{
 #b-one{
     height: 100%;
     width: 25%;
-    background-color: aliceblue;
+    background-color: rgb(171, 246, 158);
+    color:black;
 }
 #b-two{
     height: 100%;
@@ -115,5 +116,24 @@ html,body{
 #b-four{
     height: 100%;
     width: 30%;
-    background-color: rgb(187, 228, 23);
+    background-color: rgb(2, 70, 2);
+    color:white;
+    padding:30px;
+}
+
+.notf{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notf #photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+.notf p{
+    width:85%;
+    font-size: 12px;
 }
