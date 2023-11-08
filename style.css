@@ -152,3 +152,33 @@ html,body{
     width:85%;
     font-size: 12px;
 }
+
+/* making the site responsive */
+@media(max-width:500px){
+    #overlay #text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #overlay #text h1{
+        color:black;
+        font-size: 10vw;
+    }
+    #overlay #text #textright{
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    #overlay #text #textright p{
+        width: initial;
+        margin-top: 20px;
+    }
+    #overlay #text #textright .para-one-top{
+        color:rgba(255, 255, 255, 0.947)
+    }
+    #overlay #text #textright #icons{
+        margin-top: 20px;
+
+    }
+}
