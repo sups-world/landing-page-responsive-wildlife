@@ -110,7 +110,8 @@ html,body{
     background-color: rgb(15, 171, 67);
 }
 #b-three-top{
-    height: 50%;
+    /* height: 50%; bottom's min-height is 40vh...so here 50% is 20vh */
+    min-height:20vh;
     width: 100%;
     background-color:rgb(29, 115, 29);
     padding: 20px;
@@ -121,7 +122,7 @@ html,body{
     margin-top: 5px;
 }
 #b-three-bottom{
-    height: 50%;
+    min-height:20vh;
     width: 100%;
     background-color: rgb(46, 192, 99);
     background-image: url("https://images.unsplash.com/photo-1623334999098-7333609260cd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cG9uZHxlbnwwfHwwfHx8MA%3D%3D");
@@ -179,6 +180,26 @@ html,body{
     }
     #overlay #text #textright #icons{
         margin-top: 20px;
+    }
 
+    #bottom{
+        flex-direction: column;
+        min-height: 25vh;
+    }
+
+    #b-one{
+        width: 100%;
+    }
+    #b-two{
+        width: 100%;
+        min-height: 40vh;
+
+    }
+    #b-three{
+        width: 100%;
+        flex-direction: column;
+    }
+    #b-four{
+        width: 100%;
     }
 }
